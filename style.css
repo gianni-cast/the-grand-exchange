@@ -1,0 +1,29 @@
+body {
+    background-image: url('https://cdn2.steamgriddb.com/hero_thumb/5c341d10c5596a0fd920fda9f33bcb06.jpg');
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    color: #ffff00;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.search-form {
+    text-align: center; 
+}
+
+#osrsItemSearch {
+    width: 800px; 
+    padding: 10px; 
+    font-size: 16px; 
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+}
