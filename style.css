@@ -1,6 +1,6 @@
 body {
     background-image: url('https://cdn2.steamgriddb.com/hero_thumb/5c341d10c5596a0fd920fda9f33bcb06.jpg');
-    background-size: cover;
+    background-size:contain;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
     font-size: 16px; 
 }
 
-button {
+.submit {
     padding: 10px 20px; 
     font-size: 16px; 
 }
@@ -37,4 +37,10 @@ button {
     padding: 10px;
     text-align: center;
     color: #ffff00;
+}
+
+#bankClerk {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
