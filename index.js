@@ -1,5 +1,11 @@
-//Global
+const baseUrl = "http://localhost:3000"
 
-fetch('https://secure.runescape.com/m=itemdb_oldschool/api/catalogue/items.json?category=1&alpha=c&page=14')
-    .then(response => console.log(response))
-    .catch(error => console.error(error))
+document.addEventListener("DOMContentLoaded", function() {
+    getItems()
+})
+
+function getItems() {
+    fetch(`${baseUrl}/items`)
+    .then(response => response.json())
+    .then(items => console.log(items))
+}
