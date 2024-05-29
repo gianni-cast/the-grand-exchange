@@ -43,4 +43,16 @@ header {
     position: fixed;
     bottom: 0;
     right: 0;
+    height: 700px;
+    width: 300px;
+    margin: 50px;
+}
+
+#pilarGrandExchange {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 700px;
+    width: 300px;
+    margin: 50px;
 }
