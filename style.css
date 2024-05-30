@@ -106,3 +106,9 @@ h2{
     margin-top: 20px;
     margin-right: 5%;
 }
+
+#lumbridgeBridge {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
