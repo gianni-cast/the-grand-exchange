@@ -28,5 +28,6 @@ function displayItems (items) {
      document.getElementById('itemData').src = item.icon_large         
      document.getElementById('nameData').textContent = item.name
      document.getElementById('priceData').textContent = item.current.price       
-     document.getElementById('changeData').textContent = item.current.trend        
+     document.getElementById('changeData').textContent = item.current.trend    
+     document.getElementById('itemDescription').textContent = item.description    
   }
