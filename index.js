@@ -42,7 +42,7 @@ function handleLogin(event) {
   const username = document.getElementById('username').value
   const password = document.getElementById('password').value
 
-  if (username === 'gc916' && password === 'runelite'){
+  if (username === 'osgamer' && password === 'runelite'){
     alert('You are now logged in!')
   }
 
