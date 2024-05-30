@@ -51,12 +51,10 @@ function handleLogin(event) {
   }
 }
 
-easterEggImage.addEventListener("keydown", handleKeydown)
+document.addEventListener("keydown", handleKeyDown);
 
-function handleKeyDown(event){
-
-  if (event.key.toLowerCase() === "h") {   
-    
-    easterEggImage.style.display = "block"
+function handleKeyDown(event) {
+  if (event.key.toLowerCase() === "h") {
+    easterEggImage.style.display = "block";
   }
 }
