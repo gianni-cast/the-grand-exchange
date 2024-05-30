@@ -1,12 +1,11 @@
 const baseUrl = "http://localhost:3000"
 const availableItems = document.getElementById('shop-items')
 const logInForm = document.getElementById('logIn')
+const easterEggImage = document.getElementById('easterEgg')    
 
 document.addEventListener("DOMContentLoaded", function() {
     getItems()
 })
-
-logInForm.addEventListener('submit', handleLogin)
 
 function getItems() {
     fetch(`${baseUrl}/items`)
@@ -35,6 +34,9 @@ function displayItems (items) {
      document.getElementById('itemDescription').textContent = item.description    
   }
 
+logInForm.addEventListener('submit', handleLogin)
+
+
 function handleLogin(event) {
   event.preventDefault()
   const username = document.getElementById('username').value
@@ -46,5 +48,15 @@ function handleLogin(event) {
 
   else {
     alert('Invalid Log In. Please try again....')
+  }
+}
+
+easterEggImage.addEventListener("keydown", handleKeydown)
+
+function handleKeyDown(event){
+
+  if (event.key.toLowerCase() === "h") {   
+    
+    easterEggImage.style.display = "block"
   }
 }
