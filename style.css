@@ -87,3 +87,12 @@ h2{
     margin-left: 125px;
     color: #ffff00;
 }
+
+#easterEgg {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 150px;
+   
+}
