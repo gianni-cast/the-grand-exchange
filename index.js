@@ -1,9 +1,12 @@
 const baseUrl = "http://localhost:3000"
 const availableItems = document.getElementById('shop-items')
+const logInForm = document.getElementById('logIn')
 
 document.addEventListener("DOMContentLoaded", function() {
     getItems()
 })
+
+logInForm.addEventListener('submit', handleLogin)
 
 function getItems() {
     fetch(`${baseUrl}/items`)
@@ -31,3 +34,17 @@ function displayItems (items) {
      document.getElementById('changeData').textContent = item.current.trend    
      document.getElementById('itemDescription').textContent = item.description    
   }
+
+function handleLogin(event) {
+  event.preventDefault()
+  const username = document.getElementById('username').value
+  const password = document.getElementById('password').value
+
+  if (username === 'gc916' && password === 'runelite'){
+    alert('You are now logged in!')
+  }
+
+  else {
+    alert('Invalid Log In. Please try again....')
+  }
+}
