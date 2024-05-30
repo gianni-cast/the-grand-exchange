@@ -18,9 +18,8 @@ header {
 }
 
 #osrsItemSearch {
-    width: 100%; 
-    padding: 10px;
-    max-width: 800px; 
+    width: 800px; 
+    padding: 10px; 
     font-size: 16px; 
 }
 
@@ -31,8 +30,6 @@ header {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .item, .price, .change, .name {
@@ -40,7 +37,6 @@ header {
     padding: 10px;
     text-align: center;
     color: white;
-    width: 100%;
 }
 
 #bankClerk {
@@ -70,6 +66,15 @@ header {
     text-align: center;
 }
 
+#currentBank {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+    margin-right: 125px;
+    margin-bottom: 0px;
+}
+
 h2{
     color: chocolate;
 }
@@ -87,7 +92,7 @@ h2{
     display: none;
     position: fixed;
     left: 0;
-    bottom: 0;
-    margin-left: 150px;
-   
+    bottom: 0px;
+    margin-left: 5%;
+    max-width: 90%;
 }
