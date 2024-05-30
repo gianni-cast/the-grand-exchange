@@ -1,6 +1,6 @@
 body {
     background-image: url('https://cdn2.steamgriddb.com/hero_thumb/5c341d10c5596a0fd920fda9f33bcb06.jpg');
-    background-size:cover;
+    background-size: cover;
 }
 
 header {
@@ -70,4 +70,8 @@ header {
     height: 600px;
     margin-right: 125px;
     margin-bottom: 50px;
+}
+
+h2{
+    color: chocolate;
 }
