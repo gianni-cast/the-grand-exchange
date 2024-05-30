@@ -21,5 +21,12 @@ function displayItems (items) {
     const itemImgHolder = document.createElement('img')
     itemImgHolder.src = item.icon_large
     availableItems.append(itemImgHolder)
+    itemImgHolder.addEventListener('click', () => handleClick(item))
   }
 
+  function handleClick(item) { 
+     document.getElementById('itemData').src = item.icon_large         
+     document.getElementById('nameData').textContent = item.name
+     document.getElementById('priceData').textContent = item.current.price       
+     document.getElementById('changeData').textContent = item.current.trend        
+  }
