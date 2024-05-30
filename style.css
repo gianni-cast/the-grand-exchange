@@ -98,3 +98,9 @@ h2{
     margin-left: 5%;
     max-width: 90%;
 }
+
+#lumbridgeMiniMap {
+    position: fixed;
+    top: 0;
+    right:0;
+}
