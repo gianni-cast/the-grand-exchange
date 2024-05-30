@@ -75,3 +75,12 @@ header {
 h2{
     color: chocolate;
 }
+
+#logIn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 125px;
+    color: #ffff00;
+}
